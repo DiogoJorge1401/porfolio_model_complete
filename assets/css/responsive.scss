@@ -1,0 +1,659 @@
+/* ==================== BREAKPOINTS ==================== */
+
+
+/* ----- X-Large devices (large desktops, 1200px and up) ----- */
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+     :root {
+        --container-width: 1140px;
+    }
+    .container {
+        max-width: var(--container-width);
+    }
+    header {
+        .header {
+            width: 95%;
+            .logo {
+                margin-right: 100px;
+            }
+            .nav-menu {
+                ul {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+    .section-counter {
+        .container {
+            min-width: 1200px;
+        }
+    }
+}
+
+
+/* ----- Large devices (desktops, 992px and up) ----- */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+     :root {
+        --container-width: 960px;
+    }
+    .container {
+        max-width: var(--container-width);
+    }
+    header {
+        .header {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+            .toggle-bar {
+                button#menu-toggle {
+                    display: block;
+                }
+            }
+            .mobile-menu-panel {
+                display: flex;
+            }
+            .top-btn {
+                .btn {
+                    margin-right: -170px;
+                }
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    }
+    .section-counter {
+        .container {
+            min-width: 100%;
+        }
+    }
+    .hero {
+        .banner-top .banner-text h1.main-heading {
+            font-size: 60px;
+        }
+        .hero-icons {
+            .img-one {
+                display: none;
+            }
+            .img-three {
+                top: 25%;
+                left: 4%;
+            }
+        }
+    }
+    .services .services-box .single-services {
+        flex-direction: column;
+        padding: 30px 20px 25px;
+        .content {
+            text-align: center;
+        }
+    }
+    .section-title h2 {
+        font-size: 42px;
+    }
+    .experience .exp-container {
+        .exp-left {
+            margin-right: 50px;
+        }
+        .exp-right {
+            width: calc(50% - 50px);
+        }
+    }
+    .section-counter .container .counter-wrapper {
+        padding: 70px 50px;
+    }
+    .cta-container .cta-left h2 {
+        font-size: 35px;
+    }
+    .pricing .pricing-wrapper .single-pricing {
+        padding: 30px;
+    }
+    .blog .blog-wrapper {
+        flex-direction: column;
+        .single-blog {
+            justify-content: center;
+            .img {
+                width: 29%;
+            }
+        }
+    }
+    #footer .footer-top .footer-cta h2 {
+        font-size: 29px;
+    }
+}
+
+
+/* ----- Medium devices (tablets, 768px and up) ----- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+     :root {
+        --container-width: 760px;
+    }
+    .container {
+        max-width: var(--container-width);
+    }
+    header {
+        .header {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+            .toggle-bar {
+                button#menu-toggle {
+                    display: block;
+                }
+            }
+            .mobile-menu-panel {
+                display: flex;
+            }
+            .top-btn {
+                .btn {
+                    margin-right: -50px;
+                }
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    }
+    .section-counter {
+        .container {
+            min-width: 100%;
+        }
+    }
+    .hero {
+        .banner-top .banner-text h1.main-heading {
+            font-size: 52px;
+        }
+        .hero-icons {
+            display: none;
+        }
+    }
+    .services .services-box {
+        padding: 30px;
+        .single-services {
+            flex-direction: column;
+            padding: 30px 20px 25px;
+            width: calc(50% - 30px);
+            .content {
+                text-align: center;
+            }
+        }
+    }
+    .section-title h2 {
+        font-size: 42px;
+    }
+    .experience .exp-container {
+        justify-content: center;
+        .exp-left {
+            width: 80%;
+            margin: 0;
+        }
+        .exp-right {
+            margin-top: 40px;
+            padding: 50px;
+            width: 100%
+        }
+    }
+    .section-counter .container .counter-wrapper {
+        padding: 70px 0;
+    }
+    .cta-container {
+        padding: 0 35px;
+        .cta-left {
+            flex-basis: 100%;
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .cta-right {
+            flex-basis: 100%;
+            text-align: left;
+            .content {
+                margin-top: 40px;
+                p.cta-tag {
+                    margin-left: 40px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .pricing .pricing-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        .single-pricing {
+            flex-basis: calc(50% - 30px);
+            margin-bottom: 15px;
+        }
+    }
+    .blog .blog-wrapper {
+        flex-direction: column;
+        .single-blog {
+            justify-content: center;
+            .img {
+                width: 29%;
+            }
+        }
+    }
+    .projects .portfolio .items-wrapper {
+        padding: 30px;
+        .single-items {
+            flex-basis: calc(50% - 30px);
+        }
+    }
+    .consultation .section-wrapper {
+        justify-content: center;
+        .form-consultation {
+            flex-basis: 80%;
+        }
+        .consultation-right {
+            flex-basis: 80%;
+            margin-top: 60px;
+            padding-left: 0;
+        }
+    }
+    .faq .faq-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 30px;
+        .left-content {
+            max-width: 80%;
+            margin-left: 0;
+        }
+        .right-content {
+            margin-top: 60px;
+            max-width: 80%;
+        }
+    }
+    #footer .footer-top .footer-cta {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-size: 26px;
+        }
+        .btn {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+/* ----- Small devices (landscape phones, 576px and up) ----- */
+
+@media (min-width: 576px) and (max-width: 767px) {
+     :root {
+        --container-width: 540px;
+    }
+    .container {
+        max-width: var(--container-width);
+    }
+    header {
+        .header {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+            .toggle-bar {
+                button#menu-toggle {
+                    display: block;
+                }
+            }
+            .mobile-menu-panel {
+                display: flex;
+            }
+            .top-btn {
+                .btn {
+                    display: none;
+                }
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    }
+    .section-counter {
+        .container {
+            min-width: 100%;
+        }
+    }
+    .section-title h2 {
+        font-size: 32px;
+    }
+    .hero {
+        .banner-top .banner-text h1.main-heading {
+            font-size: 42px;
+        }
+        .hero-icons {
+            display: none;
+        }
+    }
+    .services .services-box {
+        padding: 30px;
+        .single-services {
+            flex-direction: column;
+            padding: 30px 20px 25px;
+            width: calc(50% - 30px);
+            .content {
+                text-align: center;
+            }
+        }
+    }
+    .experience .exp-container {
+        justify-content: center;
+        .exp-left {
+            width: 100%;
+            margin: 0;
+        }
+        .exp-right {
+            margin-top: 10px;
+            padding: 50px;
+            width: 100%;
+        }
+    }
+    .section-counter .container {
+        .counter-wrapper {
+            padding: 70px 0;
+            row-gap: 15px;
+            .single-counter {
+                flex-basis: 50%;
+            }
+        }
+    }
+    .cta-container {
+        padding: 0 35px;
+        .cta-left {
+            flex-basis: 100%;
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .cta-right {
+            flex-basis: 100%;
+            text-align: left;
+            .content {
+                margin-top: 40px;
+                p.cta-tag {
+                    margin-left: 40px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .pricing .pricing-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        .single-pricing {
+            flex-basis: 100%;
+        }
+    }
+    .blog .blog-wrapper {
+        flex-direction: column;
+        .single-blog {
+            justify-content: center;
+            flex-wrap: wrap;
+            .img {
+                width: 100%;
+                position: relative;
+                height: 300px;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+            }
+            .content-area {
+                width: 100%;
+            }
+        }
+    }
+    .projects .portfolio .items-wrapper {
+        padding: 30px;
+        .single-items {
+            flex-basis: calc(50% - 30px);
+        }
+    }
+    .consultation .section-wrapper {
+        justify-content: center;
+        .form-consultation {
+            flex-basis: 80%;
+        }
+        .consultation-right {
+            flex-basis: 80%;
+            margin-top: 60px;
+            padding-left: 0;
+        }
+    }
+    .faq .faq-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 30px;
+        .left-content {
+            max-width: 80%;
+            margin-left: 0;
+            .video-cont {
+                height: 460px;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+        .right-content {
+            margin-top: 60px;
+            max-width: 80%;
+        }
+    }
+    #footer .footer-top .footer-cta {
+        flex-direction: column;
+        padding: 50px 50px;
+        h2 {
+            font-size: 26px;
+        }
+        .btn {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+/* ----- X-Small devices (portrait phones, less than 576px) ----- */
+
+@media (max-width: 575px) {
+     :root {
+        --container-width: 100%;
+    }
+    .container {
+        max-width: var(--container-width);
+        padding: 0 15px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    header {
+        .header {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+            .toggle-bar {
+                button#menu-toggle {
+                    display: block;
+                    font-size: 35px;
+                }
+            }
+            .mobile-menu-panel {
+                display: flex;
+            }
+            .top-btn {
+                .btn {
+                    display: none;
+                }
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    }
+    .section-counter {
+        .container {
+            min-width: 100%;
+        }
+    }
+    .hero {
+        .banner-top {
+            margin-top: 150px;
+            .banner-text {
+                h1.main-heading {
+                    font-size: 28px;
+                }
+                p.banner-bottom {
+                    width: 100%;
+                }
+            }
+        }
+        .hero-icons {
+            display: none;
+        }
+    }
+    .services .services-box {
+        padding: 30px;
+        .single-services {
+            flex-direction: column;
+            padding: 30px 20px 25px;
+            width: 100%;
+            .content {
+                text-align: center;
+            }
+        }
+    }
+    .experience .exp-container {
+        justify-content: center;
+        .exp-left {
+            width: 100%;
+            margin: 0;
+        }
+        .exp-right {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+    }
+    .section-counter .container {
+        .counter-wrapper {
+            padding: 70px 0;
+            row-gap: 30px;
+            .single-counter {
+                flex-basis: 100%;
+            }
+        }
+    }
+    .cta-container {
+        padding: 0 5px;
+        .cta-left {
+            flex-basis: 100%;
+            h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+        }
+        .cta-right {
+            flex-basis: 100%;
+            text-align: left;
+            .content {
+                margin-top: 40px;
+                p.cta-tag {
+                    margin-left: 40px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .pricing .pricing-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        .single-pricing {
+            flex-basis: 100%;
+        }
+    }
+    .blog .blog-wrapper {
+        flex-direction: column;
+        .single-blog {
+            justify-content: center;
+            flex-wrap: wrap;
+            .img {
+                width: 100%;
+                position: relative;
+                height: 300px;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+            }
+            .content-area {
+                width: 100%;
+            }
+        }
+    }
+    .projects .portfolio .items-wrapper {
+        padding: 10px;
+        .single-items {
+            flex-basis: 100%;
+        }
+    }
+    .consultation .section-wrapper {
+        justify-content: center;
+        .form-consultation {
+            flex-basis: 100%;
+        }
+        .consultation-right {
+            flex-basis: 100%;
+            margin-top: 60px;
+            padding-left: 0;
+        }
+    }
+    .testimonials .testimonial-wrapper .single-testimonial .testi-box {
+        padding: 25px;
+    }
+    .faq .faq-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 30px;
+        .left-content {
+            max-width: 80%;
+            margin-left: 0;
+            .video-cont {
+                height: 350px;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+        .right-content {
+            margin-top: 60px;
+            max-width: 80%;
+            .faq-wrapper .single-faq h4.faq-title {
+                &::after {
+                    right: 10px;
+                }
+            }
+        }
+    }
+    #footer .footer-top .footer-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px;
+        h2 {
+            font-size: 29px;
+        }
+        .btn {
+            margin-top: 40px;
+        }
+    }
+}
